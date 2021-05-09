@@ -21,6 +21,7 @@
 			return {
 				fundList:[
 					{"name":"广发价值领先混合12121", "code":"008099", "value":1.7588, "increase":35.49,"hasCollect":1},
+					{"name":"广发价值领先混合12121", "code":"008099", "value":1.7588, "increase":35.49,"hasCollect":1},
 					// {"name":"广发价值领先混合", "code":"008099", "value":2.7588, "increase":35.49},
 					// {"name":"广发价值领先混合", "code":"008099", "value":2.7588, "increase":35.49},
 					// {"name":"广发价值领先混合", "code":"008099", "value":2.7588, "increase":35.49},
