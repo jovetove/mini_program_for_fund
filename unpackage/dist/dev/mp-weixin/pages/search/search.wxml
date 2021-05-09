@@ -1,0 +1,1 @@
+<view><wyb-table class="vue-ref" vue-id="50cad900-1" first-line-fixed="true" border-color="#dedede" first-col-bg-color="#fdfdfd" show-vert-border="{{false}}" headers="{{headers}}" contents="{{contents}}" url-col="{{urlCol}}" sort-col="{{sortCol}}" data-ref="table" data-event-opts="{{[['^onCellClick',[['onPress']]]]}}" bind:onCellClick="__e" bind:__l="__l"></wyb-table></view>

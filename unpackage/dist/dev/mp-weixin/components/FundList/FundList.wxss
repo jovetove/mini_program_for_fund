@@ -1,0 +1,36 @@
+
+.list-row{
+	background-color: #e3e3e3;
+	min-height: 100rpx;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	        align-items:center;
+}
+.flex-item {
+	width: 33.3%;
+}
+/* 自选 */
+.collect {
+	height:60rpx;
+	width: 60rpx;
+	margin-right: 10rpx;
+}
+.fund {
+}
+.name {
+	margin-top: 10rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/* 文本不换行，这样超出一行的部分被截取，显示... */
+	white-space: nowrap;
+}
+.code {
+	margin-top: 5rpx;
+}
+.value {
+	font-size:  130%;
+}
+.increase {
+	font-size:  130%;
+}
+

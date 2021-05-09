@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-row": "/node-modules/@dcloudio/uni-ui/lib/uni-row/uni-row",
+    "uni-col": "/node-modules/@dcloudio/uni-ui/lib/uni-col/uni-col",
+    "l-f2": "/uni_modules/lime-f2/components/lime-f2/index"
+  }
+}

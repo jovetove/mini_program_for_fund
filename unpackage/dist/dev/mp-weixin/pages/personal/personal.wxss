@@ -1,0 +1,17 @@
+
+.demo-uni-row {
+    margin-bottom: 10px;
+    /* QQ、字节小程序文档写有 :host，但实测不生效 */
+    /* 百度小程序没有 :host，需要设置block */
+}
+.card{
+  width: 96%;
+  margin-left: 2%;
+  background-color: #ffffff;
+  height: 390rpx;
+  -webkit-border-radius: 12rpx;
+          border-radius: 12rpx;
+  /* shadow是阴影效果，四个值分别为水平阴影，垂直阴影，模糊距离，阴影的颜色 */
+  /* box-shadow: 5px 5px 5px #cbcbcb; */
+}
+
