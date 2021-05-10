@@ -217,9 +217,9 @@
 </script>
 
 <style>
-	.text {
-		margin-top: 50px;
-		margin-left: 20px;
-		width: 100%;
-	}
+.text {
+	margin-top: 50px;
+	margin-left: 20px;
+	width: 100%;
+}
 </style>

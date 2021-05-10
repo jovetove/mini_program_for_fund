@@ -1,8 +1,8 @@
 <!-- https://ext.dcloud.net.cn/plugin?id=381 -->
 <template>
 	<view class="content">
-		<view :style="{height: tabHeight + 1 +'px'}">
-			<view :class="topFixed?'select-tab-fixed-top':'select-tab'" :style="{height: tabHeight+'px'}">
+		<view :style="{height: tabHeight + 0+'rpx'}">
+			<view :class="topFixed?'select-tab-fixed-top':'select-tab'" :style="{height: tabHeight+'rpx'}">
 				<view class="select-tab-item" :style="{width: itemWidth}" v-for="(item,index) in titleList" :key="index" @tap="showMenuClick(index)">
 					<text :style="{color:color}">{{item.title}}</text>
 					<text class="arrows sl-font" :class="statusList[index].isActive?up:down"></text>
@@ -148,7 +148,7 @@
 			return {
 				down: 'sl-down',
 				up: 'sl-up',
-				tabHeight: 50,
+				tabHeight: 78,
 				statusList: [],
 				selectedIndex: '',
 				titleList: [],
@@ -264,23 +264,24 @@
 	@import 'iconfont/iconfont.css';
 
 	.select-tab {
-		border-bottom: #F7F7F7 1px solid;
+		border-bottom: #F7F7F7 0rpx solid;
 		background-color: #FFFFFF;
 		display: flex;
 		width: 100%;
 	}
 
 	.select-tab-fixed-top {
-		border-bottom: #F7F7F7 1px solid;
+		border-top: 0rpx;
+		border-bottom: 0rpx;
 		background-color: #FFFFFF;
 		display: flex;
 		width: 100%;
 		position: fixed;
 		/* #ifdef H5 */
-		top: 44px;
+		top: 88rpx;
 		/* #endif */
 		/* #ifndef H5 */
-		top: 0;
+		top: ;
 		/* #endif */
 	}
 
