@@ -2,11 +2,10 @@
 	<view>
 		<!-- 设置圆角 -->
 		<uni-search-bar placeholder="请输入基金代码/简称/基金经理姓名"  
-						:radius="100" @input="funInput" @blur="funcUnBlur" 
+						:radius="100"   @focus="funcFocus" @input="funInput" @blur="funcUnBlur" 
 						@cancel="funCancel" @confirm="search" @clear="funClear"/>
-
 		<!-- 搜索历史记录 -->
-		<uni-list v-show="show.isShowRecommond == true">
+		<uni-list v-show="show.isFocus == true">
 			<uni-list-item   v-for="item in searchHistory" :title="item.message"></uni-list-item>
 		</uni-list>
 		<view style="padding: 10rpx;"></view>
@@ -15,40 +14,45 @@
 			<view>
 				<MarketIndex></MarketIndex>
 			</view>
+			<view style="padding: 1rpx; background-color: #c8c8c8;"></view>
 			<!-- 功能导航 -->
 			<view class="navigator-swiper">
 				<NavigatorGrid element-id="navigatorMenu" :list="menu" @press="onPress" height="180" size="90"/>
 			</view>
+			<view style="padding: 1rpx; background-color: #c8c8c8;"></view>
 		</view>
 	</view>
-	
 </template>
 
 <script>
+	
 	export default {
-		
 		data() {
 			return {
 				value: '',
 				show:{
-					isShowRecommond: false
+					//  是否搜索栏有焦点
+					isFocus:false,
+					// 是否搜索栏触发推荐功能
+					isShowRecommond: false,
 				},
-				searchHistory: [],
+				searchHistory: [
+					{"message":12},
+					{"message":123},
+				],
 				menu:[
-						{title: "ETF估值",  icon: "/static/pic/pic.png"},
-						{title: "基金相似度对比",  icon: "/static/pic/pic.png"},
-						{title: "带app内url",  icon: "/static/pic/pic.png"},
-						{title: "pt=redirect", openType: 'redirectTo', url: '/pages/personal/personal'},
-						{title: "带app内url",  icon: "/static/pic/pic.png"},
-						{title: "带app内url",  icon: "/static/pic/pic.png"},
-						{title: "带app内url",  icon: "/static/pic/pic.png"},
-						{title: "带app内url",  icon: "/static/pic/pic.png"},
-						{title: "带app内url",  icon: "/static/pic/pic.png"},
-						{title: "带app内url",  icon: "/static/pic/pic.png"},
-						{title: "带app内url",  icon: "/static/pic/pic.png"},
-						{title: "带app内url",  icon: "/static/pic/pic.png"},
+						{title: "ETF估值",   icon: "/static/pic/pic.png", isTab:false, page: '/pages/IndexValuation/IndexValuation'},
+						{title: "相似度",    icon: "/static/pic/pic.png", isTab:false, page: '/pages/SimilarityContrast/SimilarityContrast'},
+						{title: "基金详情",  icon: "/static/pic/pic.png", isTab:false, page: '/pages/FundDetails/FundDetails'},
+						{title: "基金分类",  icon: "/static/pic/pic.png", isTab:false, page: '/pages/search/search'},
+						{title: "基金经理",  icon: '/static/pic/pic.png', isTab:false, page: '/pages/personal/personal'},
+						{title: "基金公司",  icon: "/static/pic/pic.png", isTab:false, page: '/pages/personal/personal'},
+						{title: "基金指标",  icon: "/static/pic/pic.png", isTab:false, page: '/pages/personal/personal'},
+						{title: "风险评估",  icon: "/static/pic/pic.png", isTab:false, page: '/pages/personal/personal'},
+						{title: "知识库",    icon: "/static/pic/pic.png", isTab:false, page: '/pages/personal/personal'},
+						{title: "定投计算",  icon: "/static/pic/pic.png", isTab:false, page: '/pages/personal/personal'},
+						{title: "投资组合",  icon: "/static/pic/pic.png", isTab:false, page: '/pages/personal/personal'},
 					]
-				
 			}
 		},
 		
@@ -93,10 +97,24 @@
 			funcUnBlur:function(value){
 				console.log("失去焦点",value.value);
 			},
+			
+			funcFocus:function(e){
+				console.log("取得焦点",);
+			},
+			
 			// 对应没有openType和url时的点击事件
+			// 跳转页面
 			onPress:function(e){
-			        console.log(e);
+				let pagePath = e.page;
+				if(e.isTab){
+					uni.switchTab({url:pagePath});
+					console.log(pagePath);
+				}else{
+					uni.navigateTo({url: pagePath});
+				}
+				
 			}
+			
 		}
 	}
 </script>
@@ -108,5 +126,4 @@
 	line-height: 300rpx;
 	text-align: center;
 }
-
 </style>

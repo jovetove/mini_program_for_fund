@@ -95,7 +95,7 @@
 }
 
 .tab-head{
-	font-size: 140%;
+	font-size: 100%;
 	justify-content:flex-start;
 	/* background-color: #007AFF; */
 }

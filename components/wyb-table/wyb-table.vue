@@ -521,7 +521,7 @@
 			},
 			emptyString: {
 				type: String,
-				default: '-'
+				default: '/'
 			},
 			width: {
 				type: String,
@@ -553,7 +553,7 @@
 			},
 			headerBgColor: {
 				type: String,
-				default: '#f1f1f1'
+				default: '#ffffff'
 			},
 			contentBgColor: {
 				type: String,
@@ -573,7 +573,7 @@
 			},
 			firstColBgColor: {
 				type: String,
-				default: '#f1f1f1'
+				default: '#fff2da'
 			},
 			firstLineFixed: {
 				type: Boolean,
@@ -589,9 +589,10 @@
 					return [5, 10]
 				}
 			},
+			// 边框颜色
 			borderColor: {
 				type: String,
-				default: '#e1e1e1'
+				default: '#efefef'
 			},
 			urlCol: {
 				type: Array,

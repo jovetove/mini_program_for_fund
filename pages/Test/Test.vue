@@ -6,19 +6,20 @@
 		:menuList.sync="menuList" 
 		@result="result">
 		</sl-filter>
-		<FundList></FundList>
+		
 		<!-- 这是一个没有什么用处的占位view，测试组件会不会被其他view挡住 -->
 		<view class="text">
 			<text>{{filterResult}}</text>
 		</view>
-		
+		<FundReturnRateChart></FundReturnRateChart>
+		<view class="test1">
+			
+		</view>
 	</view>
 </template>
 
 <script>
-
 	export default {
-
 		data() {
 			return {
 				themeColor: '#000000',
@@ -217,9 +218,14 @@
 </script>
 
 <style>
-.text {
-	margin-top: 50px;
-	margin-left: 20px;
-	width: 100%;
-}
+	.text {
+		margin-top: 50px;
+		margin-left: 20px;
+		width: 100%;
+	}
+	.test1{
+		width: 200rpx;
+		height: 100rpx;
+		background: linear-gradient(90deg,#fff2da 0%,#fff 90%);
+	}
 </style>

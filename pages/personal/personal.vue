@@ -24,7 +24,7 @@
 					<l-f2 ref="base"></l-f2>
 				</view>
 			</view>
-
+			<!-- <ThermodynamicChart>dd</ThermodynamicChart> -->
 		</view>
 	</view>
 </template>
@@ -82,8 +82,6 @@
 </script>
 
 <style>
-
-	
 	.demo-uni-row {
 	    margin-bottom: 10px;
 	    /* QQ、字节小程序文档写有 :host，但实测不生效 */

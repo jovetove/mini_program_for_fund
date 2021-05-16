@@ -24,27 +24,17 @@
 		},
 		{
             "path" : "pages/personal/personal",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
+            "style" :{
+                "navigationBarTitleText": "12",
                 "enablePullDownRefresh": false
             }
             
         }
-        ,{
-            "path" : "pages/fundDetail/fundDetail",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
+		,{
             "path" : "pages/dataList/dataList",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "12",
                 "enablePullDownRefresh": false
             }
             
@@ -54,6 +44,33 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "Debug",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/SimilarityContrast/SimilarityContrast",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "基金相似度对比",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/FundDetails/FundDetails",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "基金详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/IndexValuation/IndexValuation",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "指数估值",
                 "enablePullDownRefresh": false
             }
             

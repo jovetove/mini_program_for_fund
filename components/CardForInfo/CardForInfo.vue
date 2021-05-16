@@ -12,9 +12,7 @@
 					</view>
 				</view>
 			</view>
-			<image src='http://docfile.funkingka.cn/FqzmiFqvXbHg-cfbquNRlawHUgHt' 
-					mode='scaleToFill' class='gif-wave'>
-			</image>
+			<image src='http://docfile.funkingka.cn/FqzmiFqvXbHg-cfbquNRlawHUgHt' mode='scaleToFill' class='gif-wave'/>
 		</view>  
 	</view>
 </template>
