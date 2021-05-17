@@ -1,3 +1,4 @@
+// #ifndef APP-NVUE
 // 计算版本
 export function compareVersion(v1, v2) {
 	v1 = v1.split('.')
@@ -31,3 +32,34 @@ export function wrapEvent(e) {
 }
 
 export const pixelRatio = uni.getSystemInfoSync().pixelRatio
+// #endif
+// #ifdef APP-NVUE
+export function base64ToPath(base64) {
+	return new Promise((resolve, reject) => {
+		const [, format, bodyData] = /data:image\/(\w+);base64,(.*)/.exec(base64) || [];
+		const bitmap = new plus.nativeObj.Bitmap('bitmap' + Date.now())
+		bitmap.loadBase64Data(base64, () => {
+			if (!format) {
+				reject(new Error('ERROR_BASE64SRC_PARSE'))
+			}
+			const time = new Date().getTime();
+			const filePath = `_doc/uniapp_temp/${time}.${format}`
+			
+			bitmap.save(filePath, {}, 
+				() => {
+					bitmap.clear()
+					resolve(filePath)
+				}, 
+				(error) => {
+					bitmap.clear()
+					console.error(`${JSON.stringify(error)}`)
+					reject(error)
+				})
+		}, (error) => {
+			bitmap.clear()
+			console.error(`${JSON.stringify(error)}`)
+			reject(error)
+		})
+	})
+}
+// #endif

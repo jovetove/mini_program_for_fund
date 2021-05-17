@@ -1,7 +1,7 @@
 {
   "id": "lime-f2",
   "displayName": "蚂蚁图表 antv F2",
-  "version": "0.2.2",
+  "version": "0.5.1",
   "description": "全端兼容,一个专注于移动,开箱即用的可视化解决方案",
   "keywords": [
     "蚂蚁金服",
@@ -10,7 +10,7 @@
     "canvas",
     "图表"
 ],
-  "repository": "",
+  "repository": "https://gitee.com/liangei/lime-f2",
   "engines": {
     "HBuilderX": "^3.1.0"
   },

@@ -40,24 +40,31 @@
 		</view>
 		<view class="sub-title">收益走势</view>
 		<view>
-			<FundReturnRateChart></FundReturnRateChart>
+			<FundReturnRateChart ></FundReturnRateChart>
 		</view>
-<!-- 		<view class="content">
-			<view v-if="current === 0"></view>
-			<view v-if="current === 1"><text class="content-text">选项卡2的内容</text></view>
-			<view v-if="current === 2"><text class="content-text">选项卡3的内容</text></view>
-			<view v-if="current === 3"><text class="content-text">选项卡4的内容</text></view>
-			<view v-if="current === 4"><text class="content-text">选项卡5的内容</text></view>
-		</view> -->
-		<view class="uni-padding-wrap uni-common-mt">
-			<uni-segmented-control :current="current" :values="items" 
-				:style-type="styleType" 
-				:active-color="activeColor"
-				@clickItem="onClickItem" />
-		</view>
+		<view class="sub-title">持仓标的</view>
+		<LateralSlide></LateralSlide>
+		<!-- 手风琴效果 -->
+		<uni-collapse accordion="true">
+		    <uni-collapse-item title="标题文字">
+		        <view style="padding: 30rpx;">
+		            手风琴效果
+		        </view>
+		    </uni-collapse-item>
+		    <uni-collapse-item title="标题文字">
+		        <view style="padding: 30rpx;">
+		            手风琴效果
+		        </view>
+		    </uni-collapse-item>
+		    <uni-collapse-item title="标题文字">
+		        <view style="padding: 30rpx;">
+		            手风琴效果
+		        </view>
+		    </uni-collapse-item>
+		</uni-collapse>
 		
 		
-		<view> 12</view>
+		
 	</view>
 </template>
 
@@ -65,10 +72,7 @@
 	export default {
 		data() {
 			return {
-				items: ['一月', '三月', '半年',"一年","最大"],
-				current:0,
-				styleType: 'button',
-				activeColor: '#007aff'
+				
 			}
 		},
 		onLoad(options) {
@@ -76,12 +80,6 @@
 		},
 		
 		methods: {
-			onClickItem(e) {
-				if (this.current !== e.currentIndex) {
-					this.current = e.currentIndex
-					console.log(this.current)
-				}
-			}
 		}
 	}
 </script>

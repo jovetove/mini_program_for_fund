@@ -11,7 +11,7 @@
 		<view class="text">
 			<text>{{filterResult}}</text>
 		</view>
-		<FundReturnRateChart></FundReturnRateChart>
+		<LateralSlide v-on:resultItem="choose">12</LateralSlide>
 		<view class="test1">
 			
 		</view>
@@ -212,6 +212,9 @@
 			result(val) {
 				console.log('filter_result:' + JSON.stringify(val));
 				this.filterResult = JSON.stringify(val, null, 2)
+			},
+			choose(val){
+				console.log("选择了", val)
 			}
 		}
 	}

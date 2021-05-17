@@ -85,9 +85,9 @@
 	
 	"tabBar": {
 	        "color": "#cdcdcd",
-	        "selectedColor": "#39cffc",
+	        "selectedColor": "#000000",
 	        "borderStyle": "black",
-	        "backgroundColor": "#7f2aff",
+	        "backgroundColor": "#F8F8F8",
 	        "list": [{
 	                "pagePath": "pages/index/index",
 	                "iconPath": "static/002_shouye.png",
@@ -95,20 +95,20 @@
 	                "text": "首页"
 	            }, {
 	                "pagePath": "pages/search/search",
-	                "iconPath": "static/002_shouye.png",
-	                "selectedIconPath": "static/002_shouye.png",
-	                "text": "行情"
+	                "iconPath": "static/002_sousuo.png",
+	                "selectedIconPath": "static/002_sousuo.png",
+	                "text": "搜索"
 	            },
 	            {
 	                "pagePath": "pages/personal/personal",
-	                "iconPath": "static/002_shouye.png",
-	                "selectedIconPath": "static/002_shouye.png",
+	                "iconPath": "static/002_wenjianjia.png",
+	                "selectedIconPath": "static/002_wenjianjia.png",
 	                "text": "自选"
 	            },
 				{
 				    "pagePath": "pages/Test/Test",
-				    "iconPath": "static/002_shouye.png",
-				    "selectedIconPath": "static/002_shouye.png",
+				    "iconPath": "static/002_tupian.png",
+				    "selectedIconPath": "static/002_tupian.png",
 				    "text": "Debug"
 				}
 	        ]

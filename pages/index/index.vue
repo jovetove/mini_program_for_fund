@@ -41,9 +41,9 @@
 					{"message":123},
 				],
 				menu:[
-						{title: "ETF估值",   icon: "/static/pic/pic.png", isTab:false, page: '/pages/IndexValuation/IndexValuation'},
-						{title: "相似度",    icon: "/static/pic/pic.png", isTab:false, page: '/pages/SimilarityContrast/SimilarityContrast'},
-						{title: "基金详情",  icon: "/static/pic/pic.png", isTab:false, page: '/pages/FundDetails/FundDetails'},
+						{title: "ETF估值",   icon: "/static/menu/ETF估值.png", isTab:false, page: '/pages/IndexValuation/IndexValuation'},
+						{title: "相似度",    icon: "/static/menu/基金相似度.png", isTab:false, page: '/pages/SimilarityContrast/SimilarityContrast'},
+						{title: "基金详情",  icon: "/static/menu/基金详情.png", isTab:false, page: '/pages/FundDetails/FundDetails'},
 						{title: "基金分类",  icon: "/static/pic/pic.png", isTab:false, page: '/pages/search/search'},
 						{title: "基金经理",  icon: '/static/pic/pic.png', isTab:false, page: '/pages/personal/personal'},
 						{title: "基金公司",  icon: "/static/pic/pic.png", isTab:false, page: '/pages/personal/personal'},
