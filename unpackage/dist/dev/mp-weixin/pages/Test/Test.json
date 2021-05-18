@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "Debug",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "sl-filter": "/components/sl-filter/sl-filter",
-    "fund-list": "/components/FundList/FundList"
-  }
-}

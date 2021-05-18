@@ -11,7 +11,7 @@
 		<view class="text">
 			<text>{{filterResult}}</text>
 		</view>
-		<LateralSlide v-on:resultItem="choose">12</LateralSlide>
+
 		<view class="test1">
 			
 		</view>

@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "基金搜索",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "wyb-table": "/components/wyb-table/wyb-table"
-  }
-}

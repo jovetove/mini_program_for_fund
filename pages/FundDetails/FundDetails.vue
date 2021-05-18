@@ -38,12 +38,21 @@
 				<view class="uni-flex-item">4.65%</view>
 			</view>
 		</view>
-		<view class="sub-title">收益走势</view>
+		<!-- <view class="sub-title">收益走势</view> -->
+		<view style="padding-left: 25rpx; padding-right: 30rpx;">
+			<uni-section  title="收益走势" subTitle="通过基础的 1/24 分栏任意扩展组合形成较为复杂的混合布局"></uni-section>
+		</view>
+		
 		<view>
 			<FundReturnRateChart ></FundReturnRateChart>
 		</view>
-		<view class="sub-title">持仓标的</view>
-		<LateralSlide></LateralSlide>
+		<view style="padding-left: 25rpx; padding-right: 30rpx;">
+			<uni-section  title="持仓标的" subTitle="通过基础的 1/24 分栏任意扩展组合形成较为复杂的混合布局"></uni-section>
+		</view>
+		<view style="padding-left: 25rpx; padding-right: 30rpx;">
+			<LateralSlide></LateralSlide>
+		</view>
+		
 		<!-- 手风琴效果 -->
 		<uni-collapse accordion="true">
 		    <uni-collapse-item title="标题文字">
